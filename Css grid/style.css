@@ -483,6 +483,7 @@ ul.tickets   li{
     position: relative;
     margin: 0;
     padding-bottom: 1em;
+    position: relative;
 }
 
 
@@ -499,6 +500,14 @@ ul.tickets li::before{
 /* ul.tickets .t1::before{
     content: "T";
 } */
+ul.tickets .marker-t{
+    background-color:rgb(85, 84, 84);
+    width: 1rem;
+    text-align: center;
+    color: whitesmoke;
+    position: absolute;
+    border-radius: 50%;
+}
 
 .show-boards{
     display: flex;
