@@ -1,66 +1,84 @@
 *{
     background-color: whitesmoke;
+    box-sizing: border-box;
 }
 .main{
     display: flex;
     background-color:  rgb(231, 234, 236);
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
+    height: 100vh;    
+    width: 100vw;
+    padding: 2rem;
 
 }
 
 .tabs{
     background-color: rgb(231, 234, 236);
-    height: 95vh; 
-    width: 250px;
+    width: 200px;
     border-right: 1px solid rgb(231, 234, 236);
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1 1 0;
+    height: 100%;
+    box-shadow: gray 2px 1px 5px 2px;
+    display: flex;
 }
 
 .chat{
-    height: 95vh;
-    width: 50%;
+    flex: 1 1 0;
+    height: 100%;   
     border: 1px solid rgb(231, 234, 236); 
     overflow: scroll;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
     /* height: 1000px; */
     
 }
 
 .activity{
-    height: 95vh;
-    width: 50%;
-    overflow: scroll;
+    height: 100%;
+    flex: 1 1 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     border: 1px solid rgb(231, 234, 236); 
-    padding-left: 30px;
-    box-sizing: border-box;
     color: rgb(29, 28, 28);
+    box-sizing: border-box;
 }
-
+.tabs{
+    height: 100%;
+}
 .uptabs{
     background-color:  rgb(231, 234, 236);
 }
 .netflix-icon{
     background-color:  rgb(231, 234, 236);
-    margin-bottom: 40px;
+    margin-bottom: 5rem;
+
+    width: 50%;
 
 }
-div.tabsflex{
+.tabsflex{
     display: flex;
-    align-items: space-between;
     flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 1 0;
+    height: 100%;
     background-color:  rgb(231, 234, 236);
-    /* height: 2000px; */
 }
 
 .netflix-icon{
-    margin-top: 20px;;
+    margin-top: 2rem;;
 }
 .netflix-icon b{
     background-color:  rgb(231, 234, 236);
-    font-size: 30px;
-    margin-left: 15%;
+    font-size: 2rem;
     fill: rgb(231, 234, 236);
     color: crimson;
 }
@@ -68,15 +86,15 @@ div.tabsflex{
 
 .uptabs{
     background-color:  rgb(231, 234, 236);
+    list-style: none;
 }
 
 .uptabs li.t{
     background-color:  rgb(231, 234, 236);
-    font-size: 1.4em;
-    margin-left: 0px;
-    margin-bottom: 30px;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
     color: rgb(83, 80, 80);
-    overflow: hidden;
+    margin-left: -20%;
 
 }
 .svg{
@@ -85,52 +103,51 @@ div.tabsflex{
 
 .downtabs{
     background-color:  rgb(231, 234, 236);
-    margin-top: 200px;
-    margin-bottom: 0; 
-    margin-left: 40px;
-    align-items: flex-end;
-    top: 150px;
-    position: relative;
 }
+
 .downtabs p.d{
     background-color:  rgb(231, 234, 236);
-    font-size: 1.2em;
-    margin-bottom: 0px;
+    font-size: 1.2rem;
     color: rgb(83, 80, 80);
 }
 
-.downtabs p.sam{
-    margin-left: -10px;
-}
 
-.netflix-icon img{
-    margin-left: 20px;;
-}
 
 p.sam img{
-    border-radius: 10px;
-    border: 1.5px solid grey;
+    border-radius: 20%;
 }
 
 .case{
     display: flex;
     align-items: center;
-    width: 750px;
-    height: 60px;
     border-bottom: 1.5px solid rgb(231, 234, 236);
-    position: absolute;
-    margin-right: 50px;
-    z-index: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
 }
 
-.client-img {
+.case-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+
+.case-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.case-right img {
     border-radius: 30px;
     border: 1.5px solid rgb(230, 226, 226);
 }
 .client-name b{
-    font-weight: 100px;
-    font-size: 1.2rem;
-    margin-top: -100px;
+    font-size: 1.5rem;
 }
 
 .status b{
@@ -140,42 +157,36 @@ p.sam img{
     width: 20%;
     padding: 5px;
     justify-self: center;
-    margin-right: 400px;
 }
 
 .casenum{
     font-size: 1.2rem;
     align-self: flex-start;
-    /* margin-left: -50px; */
-    margin-left: 15px;
-    margin-right: 15px;
 
 }
 
 .client{
     display: grid;
+    flex: 1 1 0;
     grid-template-columns: 1fr 12fr;
     grid-template-rows: 1fr 1fr ;
-    position: relative;
     border-bottom: 1.5px solid rgb(230, 226, 226);
     height: 50px;
     align-content: center;
-    position: fixed;
-    top: 93px;
-    z-index: 1;
-    width: 748px;
-    margin-bottom: 100px;
+    padding: 1rem;
 }
 
 img.client-img2{
     grid-column: 1/3;
     grid-row: 1/3;
-    margin-left: 15px;
+    border-radius: 0.2rem;
     align-self: center;
+    position: relative;
 }
 
 img.wa{
-    top: 30px;
+    top: 100px;
+    z-index: 1;
     border-radius: 40px;
     left: 35px;
     position: absolute;
@@ -201,15 +212,14 @@ img.wa{
 }
 
 .chat-w-client{
-    position: absolute;
     overflow: scroll;
-    height: 830px;
-    width: 750px;
+    overflow-y: auto;
+    width: 100%;
 }
 .tv1{
     display: flex;
     /* place-content: center; */
-    width: 350px;
+    width: 50%;
     margin-left: 20px;
     margin-top: 100px;
     height: 160px;
@@ -217,7 +227,6 @@ img.wa{
 .tvicon1{
     position: relative;
     align-self: flex-end;
-    margin-right: 5px;
     height: 160px;
 }
 .tvicon1 .tv-logo{
@@ -242,7 +251,7 @@ img.wa{
     margin-bottom: 0px;
     border: 2px solid rgb(231, 234, 236);
     border-radius: 20px ;
-    padding: 10px;
+    padding: 1rem;
     box-sizing: border-box;
     color: rgb(55, 54, 54);
     align-items: center;
@@ -270,7 +279,6 @@ img.wa{
   }
 .call1 .calln-num{
     justify-self: center;
-    margin-left: 10px;
     margin-top: 10px;
 }
 
@@ -288,7 +296,7 @@ img.wa{
 .tv2{
     display: flex;
     /* place-content: center; */
-    width: 350px;
+    width: 50%;
     margin-left: 60%;
     margin-top: -50px;
     height: 160px;
@@ -296,14 +304,13 @@ img.wa{
 .tvicon2{
     position: relative;
     align-self: flex-end;
-    margin-right: 5px;
     height: 160px;
 }
 .tvicon2 .tv-logo{
     border-radius: 30px;
     background-color: rgb(244, 207, 20);
     font-size: 1.2rem;
-    padding: 5px;
+    padding: 0.3rem;
     margin-top: 125px;
     /* margin-top: 10px; */
     align-self: flex-end;
@@ -321,10 +328,12 @@ img.wa{
     margin-bottom: 0px;
     border: 2px solid rgb(231, 234, 236);
     border-radius: 20px ;
-    padding: 10px;
+    padding: 1rem;
     box-sizing: border-box;
     color: rgb(55, 54, 54);
     align-items: center;
+
+    padding: 0.5rem;
 }
 
 .call2 .call-logo .fa-phone2{
@@ -338,8 +347,8 @@ img.wa{
 
 .call2 .calln-num{
     justify-self: center;
-    margin-left: 10px;
-    margin-top: 10px;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 .call2 .calln-num b{
@@ -356,10 +365,11 @@ img.wa{
 
 .chat1{
     display: flex;
-    place-content: center;
     width: 60%;
     margin-left: 3%;
     margin-top: 100px;
+    padding: 1rem;
+    justify-content: space-evenly;
 }
 
 .icon1{
@@ -378,7 +388,6 @@ img.wa{
 }
 
 .msg1{
-
     border: 2px solid rgb(231, 234, 236);
     border-radius: 20px 20px 20px 0px;
     padding: 10px;
@@ -390,7 +399,7 @@ img.wa{
     font-size: 0.85rem;
     color: rgb(101, 100, 100);
     margin-top: 10px;
-    margin-left: 58px;
+    margin-left: 13%;
 }
 
 
@@ -401,12 +410,12 @@ img.wa{
     grid-template-rows: 1fr 1fr;
     width: 60%;
     margin-left: 40%;
-    grid-gap: 8px;
+    grid-gap: 0.2rem;
 }
 
 .icon2{
     grid-row: 1/3;
-    margin: 140px 10px 0px 0px;
+    align-self: flex-end;
 }
 
 .icon2 .net{    
@@ -417,59 +426,38 @@ img.wa{
     grid-column: 1/2;
     grid-row: 1/2;
     color: whitesmoke;
-    border-radius: 20px 20px 0px 20px;
     background-color: rgb(20, 108, 181);
-    height: 90px;
-}
-.msg2 p{
-    color: whitesmoke;
-    box-sizing: border-box;
-    background-color: rgb(20, 108, 181);
-    margin-left: 10px;
     border-radius: 20px 0px 20px 20px;
-    padding: 5px;
+    padding: 1rem;
 }
 .msg3{
     grid-column: 1/2;
     grid-row: 2/3;
     color: whitesmoke;
-    border-radius: 20px 0px 20px 20px;
     background-color: rgb(20, 108, 181);
-    height: 75px;
-}
-.msg3 p{
-    color: whitesmoke;
-    box-sizing: border-box;
-    background-color: rgb(20, 108, 181);
-    margin-left: 10px;
     border-radius: 20px 0px 20px 20px;
-    padding: 5px;
+    padding: 1rem;
 }
+
 .msg2-time{
     font-size: 0.85rem;
     color: rgb(101, 100, 100);
-    margin-right: 8%;
+    margin-right: 10%;
 }
 .type{
     display: flex;
-    position: absolute;
     /* z-index: 2; */
     flex-flow: row;
-    top: 700px;
     height: 60px;
     align-items: flex-end;
-    margin-top: 130px;
-    width: 750px;
-    margin-bottom: 50px;
-    margin-right: 10px;
-    padding-bottom: 800px;
-    
+    padding: 1rem;
+    border: 1px solid rgb(230, 226, 226);
 }
 
 input.msghere{
     align-self: flex-end;
     height: 35px;
-    width: 650px; 
+    width: 95%; 
     border-radius: 20px;
     border: 2px solid  rgb(230, 226, 226);
 }
@@ -477,26 +465,30 @@ input.msghere{
 .insights ul{
     list-style: none;
 }
+.insights{
+    padding-left: 1rem;
+}
 
-
+.past-issues{
+    padding-left: 1rem;
+}
 
 ul.tickets {
     list-style: none;
     margin:0;
-    padding:0;
+    padding: 0;
     position: relative;
 }
 ul.tickets   li{
     position: relative;
     margin: 0;
     padding-bottom: 1em;
-    padding-left: 20px;
 }
 
 
 ul.tickets li::before{
     background-color:rgb(85, 84, 84);
-    width: 2px;
+    width: .30%;
     content: '';
     position: absolute;
     top: 0px;
@@ -554,43 +546,56 @@ ul.tickets li::before{
     border-radius: 20px;
     border: 2px solid grey;
 } */
-.past-issues .t-head h3{
+.past-issues .t-head {
+    display: flex;
+    width: 90%;
     background-color: rgba(210, 210, 210, 0.707);
-    padding: 7px;
     box-sizing: border-box;
-    margin-top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin-left: 3%;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .past-issues .t-head b{
     color: whitesmoke;
     background-color: rgb(76, 146, 84);
-    margin-left: 450px;
-    padding: 4px;
+    padding: 0.1rem;
+    margin-right: 2%;
     border-radius: 5px;
 }
-.past-issues .t-head b.color{
-    color: whitesmoke;
-    background-color: rgb(222, 136, 16);
-    margin-left: 450px;
-    padding: 4px;
-    border-radius: 5px;
-}
-.past-issues .t-head {
-    border: 2px solid  rgb(230, 226, 226);
-    border-radius: 10px;
+.past-issues .t-head h3{
+    background-color: rgba(210, 210, 210, 0.707);
+    margin-left: 2%;
+
 }
 
-.past-issues .t-head p.msg{
+.past-issues .t-con {
+    width: 90%;
+
+    margin-left: 3%;
+    border: 2px solid  rgb(230, 226, 226);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.past-issues  p.msg{
     padding: 0px 40px 10px 20px;
 }
 
-.past-issues .t-head p.date{
+.past-issues p.date{
     color: grey;
     margin-left: 20px;
     margin-top: -10px;
     font-size: 0.9rem;
 }
 
+.shows{
+    padding-left: 1rem;
+}
+.help{
+    padding-left: 1rem;
+}
 .shows .fa-tv{    color: rgb(236, 16, 20);
     background-color: rgb(243, 218, 218);
     padding: 8px;
@@ -603,7 +608,7 @@ ul.tickets li::before{
     right: 50px;
     background-color: black;
     display: flex;
-    width: 400px;
+    width: 30%;
     height: 50px;
     justify-content: space-evenly;
     align-items: center;
@@ -616,7 +621,7 @@ ul.tickets li::before{
     border-radius: 50px;
 }
 
-.call .call-name b, .call .call-status{
+.call .call-name, .call .call-name b, .call .call-status{
     color: whitesmoke;
     background-color: black;
 }
@@ -644,8 +649,8 @@ ul.tickets li::before{
 
 .search{
     background-color: rgb(226, 225, 225);
-    width: 700px;
-    height: 40px;
+    width: 95%;
+    padding: 0.5rem;
     border: none;
     border-radius: 10px;
 }
@@ -654,31 +659,22 @@ ul.tickets li::before{
     font-size: 0.25rem;
 }
 
-.uptabs .ticket:hover{
-    width: 200px
-}
-
 .collapsible{
-    max-width: 400px;
     overflow:visible;
-    z-index: 2;
     list-style: none;
     background-color: rgb(231, 234, 236);
     font-size: 1.4em;
-    margin-left: 0px;
     color: rgb(83, 80, 80);
     overflow: hidden;
 }
 .collapsible input{
-    /* display: none; */
-    margin-left: 160px;
+    display: none;
 }
 .collapsible label{
-    position: relative;
     display: block;
     cursor: pointer;
     background-color: rgb(231, 234, 236);
-    z-index: 1;
+    margin-left: 0px;
 }
 .collapse{
     display: flex;
@@ -686,8 +682,7 @@ ul.tickets li::before{
 }
 .collapsible label::after{
     content: "";
-    position: absolute;v 
-    width: 200px;
+    width: 250px;
 }
 
 .collapsible-text{
@@ -707,13 +702,12 @@ ul.tickets li::before{
 }
 
 .collapsible input:checked ~ .collapsible-text{
-    max-height: 1000px;
+    max-height: 95%;
     padding: 25px;
-    margin-top: 22px;
-    margin-left: 180px;
+    margin-top: 50px;
+    margin-left: 200px;
     z-index: 2;
     position: absolute;
-    width: 300px;
     top: 200;
     opacity: 1;
     top: 0;
@@ -751,4 +745,34 @@ ul.tickets li::before{
     background-color: rgb(240, 200, 56);
     padding: 10px;
     border-radius: 50%;
+}
+
+.collapsible input:checked .tabsflex{
+    background-color:  rgb(231, 234, 236);
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: rgb(83, 80, 80);
+    margin-left: -20%;
+}
+
+.sam{
+    display: flex;
+    background-color: rgb(231, 234, 236);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sam p{     background-color: rgb(231, 234, 236)}
+
+.sam img{ border-radius: 20%;}
+.tickets{
+    position: relative;
+}
+.tickets li.t-head::before{
+    display: inline-block;
+    content: '\54';
+    position: absolute;
+    left: -1rem;
+    background-color: gray;
+    padding: 1rem;
 }
