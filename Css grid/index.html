@@ -18,7 +18,7 @@
                 <ul class="uptabs">
                     <li class="home t">
                         <i class="fa-solid svg fa-house"></i> &nbsp;  Home </li>
-                    <li class="collapsible"> 
+                    <li class="collapsible t"> 
                         
                         <label for="collapsible-head" class="t"> <i class="fa-solid svg t fa-ticket"></i>  &nbsp; Ticket</label> 
                         <input type="checkbox" id="collapsible-head" class="check">
@@ -80,18 +80,27 @@
                 <div class="downtabs">
                     <p class="noti d"><i class="fa-solid svg fa-bell"></i> &nbsp; Notifications </p>
                     <p class="settings d"><i class="fa-solid svg fa-gear"></i> &nbsp; Settings </p>
-                    <p class="sam d"><img src="man 2.png" alt="sam" width="30" height="30"> &nbsp; Sam Wilson </p>
-
+                    <div class="sam">
+                        <img src="man 2.png" alt="sam" width="30" height="30"> 
+                        <p> Sam Wilson </p>
+                    </div>
+                    
                 </div>
             </div>
 
         </div>
+        <div class="content">
         <div class="chat"> 
             <div class="case"> 
-                <p class="casenum"> Case <strong> #5678 </strong> </p>
-                <p class="status"> <b>OPEN</b> </p>
-                <p class="client-name"><img src="man 2.png" alt="nathan" class="client-img" width="30" height="30">
-                    <b>  Nathan Jones </b></p>
+                <div class="case-left">
+                    <p class="casenum"> Case <strong> #5678 </strong> </p>
+                    <p class="status"> <b>OPEN</b> </p>
+                </div>
+                <div class="case-right">
+                    <p class="client-name"><img src="man 2.png" alt="nathan" class="client-img" width="30" height="30"> </p>
+                    <b>  Nathan Jones </b>
+                </div>
+                
             </div>
             <div class="client">
                 <img src="wal.png" alt="wa" width="15" height="15" class="wa">
@@ -135,21 +144,20 @@
                     Direct Message <i class="fa-solid fa-circle"></i> 2 mins ago
                 </div>
 
-                <div class="chat2">
+                <div class="chat2" >
                     
 
                     <div class="msg2">
-                        <p class="1"> Hey Reese, 
-                            <br> Thanks for contacting us, This is not the kind 
-                            of experience we want to give our customer.
-                        </p>
+                         Hey Reese, 
+                         <br>
+                         Thanks for contacting us, This is not the kind 
+                        of experience we want to give our customer.
+                        
                     </div>
 
                     <div class="msg3">
-                        <p class="3"> 
                             Our Team member will reach out to you as soon
                             as possible and help you access your card.
-                        </p>
                     </div>
                     <div class="icon2">
                         <img src="net.png" alt="net" class="net" width="40" height="30">
@@ -176,7 +184,7 @@
                 <div class="msg1-time">
                     Direct Message <i class="fa-solid fa-circle"></i> 2 mins ago
                 </div>
-                <div class="tv2">
+                <!-- <div class="tv2">
                     
                     <div class="call2">
                         <div class="call-logo"><i class="fa-solid fa-phone fa-phone2"></i> </div>
@@ -189,22 +197,21 @@
                         <p class="tv-logo"> TV </p>
                         <img src="call-green.png" alt="wa" width="15" height="15" class="wa2">
                     </div>
-                </div>
+                </div> -->
                 <div class="chat2">
                     
 
                     <div class="msg2">
-                        <p class="1"> Hey Reese, 
-                            <br> Thanks for contacting us, This is not the kind 
-                            of experience we want to give our customer.
-                        </p>
+                         Hey Reese, 
+                         <br>
+                         Thanks for contacting us, This is not the kind 
+                        of experience we want to give our customer.
+                        
                     </div>
 
                     <div class="msg3">
-                        <p class="3"> 
                             Our Team member will reach out to you as soon
                             as possible and help you access your card.
-                        </p>
                     </div>
                     <div class="icon2">
                         <img src="net.png" alt="net" class="net" width="40" height="30">
@@ -235,17 +242,16 @@
                     
 
                     <div class="msg2">
-                        <p class="1"> Hey Reese, 
-                            <br> Thanks for contacting us, This is not the kind 
-                            of experience we want to give our customer.
-                        </p>
+                         Hey Reese, 
+                         <br>
+                         Thanks for contacting us, This is not the kind 
+                        of experience we want to give our customer.
+                        
                     </div>
 
                     <div class="msg3">
-                        <p class="3"> 
                             Our Team member will reach out to you as soon
                             as possible and help you access your card.
-                        </p>
                     </div>
                     <div class="icon2">
                         <img src="net.png" alt="net" class="net" width="40" height="30">
@@ -261,7 +267,7 @@
             
             <div class="type">
                 <div class="icon2">
-                    <img src="net.png" alt="net" class="net" width="50" height="40">
+                    <img src="net.png" alt="net" class="net" width="40" height="30">
                 </div>
                 <input class="msghere" type="text" placeholder="Type here..." >
             </div>
@@ -292,59 +298,68 @@
                 <p class="m"> This Month </p>
                 <ul class="tickets">
                     <li class="t1">
+                        
                         <div class="t-head" id="357484"> 
-                            <h3> Ticket #357484 <b>CSAT: 9</b> </h3>
-                            <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
-                                <p class="date"> 21 Jun 2021</p>
-                            </p>
+                            <h3> Ticket #357484  </h3>
+                            <b>CSAT: 9</b>
+                            
+                        </div>
+                        <div class="t-con">
+                        <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
+                            <p class="date"> 21 Jun 2021</p>
+                        </p>
                         </div>
                     </li>
                     <li class="t1">
-                        <div class="t-head" id="133221"> 
-                            <h3> Ticket #133221 <b class="color">CSAT: 6</b> </h3>
-                            <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
-                                <p class="date"> 21 Jun 2021</p>
-                            </p>
+                        
+                        <div class="t-head" id="357484"> 
+                            <h3> Ticket #357484  </h3>
+                            <b>CSAT: 9</b>
+                            
                         </div>
-                    </li>
-                        <li class="t1">
-                        <div class="t-head" id="133221"> 
-                            <h3> Ticket #133221 <b class="color">CSAT: 6</b> </h3>
-                            <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
-                                <p class="date"> 21 Jun 2021</p>
-                            </p>
+                        <div class="t-con">
+                        <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
+                            <p class="date"> 21 Jun 2021</p>
+                        </p>
                         </div>
                     </li>
                     <li class="t1">
-                        <div class="t-head" id="133221"> 
-                            <h3> Ticket #133221 <b class="color">CSAT: 6</b> </h3>
-                            <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
-                                <p class="date"> 21 Jun 2021</p>
-                            </p>
+                        
+                        <div class="t-head" id="357484"> 
+                            <h3> Ticket #357484  </h3>
+                            <b>CSAT: 9</b>
+                            
+                        </div>
+                        <div class="t-con">
+                        <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
+                            <p class="date"> 21 Jun 2021</p>
+                        </p>
                         </div>
                     </li>
                     <li class="t1">
-                        <div class="t-head" id="133221"> 
-                            <h3> Ticket #133221 <b class="color">CSAT: 6</b> </h3>
-                            <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
-                                <p class="date"> 21 Jun 2021</p>
-                            </p>
+                        
+                        <div class="t-head" id="357484"> 
+                            <h3> Ticket #357484  </h3>
+                            <b>CSAT: 9</b>
+                            
+                        </div>
+                        <div class="t-con">
+                        <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
+                            <p class="date"> 21 Jun 2021</p>
+                        </p>
                         </div>
                     </li>
                     <li class="t1">
-                        <div class="t-head" id="133221"> 
-                            <h3> Ticket #133221 <b class="color">CSAT: 6</b> </h3>
-                            <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
-                                <p class="date"> 21 Jun 2021</p>
-                            </p>
+                        
+                        <div class="t-head" id="357484"> 
+                            <h3> Ticket #357484  </h3>
+                            <b>CSAT: 9</b>
+                            
                         </div>
-                    </li>
-                    <li class="t1">
-                        <div class="t-head" id="133221"> 
-                            <h3> Ticket #133221 <b class="color">CSAT: 6</b> </h3>
-                            <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
-                                <p class="date"> 21 Jun 2021</p>
-                            </p>
+                        <div class="t-con">
+                        <p class="msg">Hey Team. I have trying to reach your mulitple time in 2 days but you haven't responsed to my query yet, can you please....
+                            <p class="date"> 21 Jun 2021</p>
+                        </p>
                         </div>
                     </li>
                     
@@ -378,7 +393,7 @@
 
             <div class="help">
 
-            </div>
+            
 
 
             <p> 
@@ -392,10 +407,9 @@
                     <h3> Login Issues</h3>
                     <p> Learn, How to resolve issues related to login</p>
                 </div>
-                <p>
-                Sequi blanditiis quas maiores, expedita officiis harum et debitis magni, totam impedit laborum dignissimos iusto asperiores unde assumenda necessitatibus neque eum doloremque voluptate quo placeat odio. Adipisci odit, maiores unde excepturi tenetur dolorum porro harum nemo in ipsa doloribus facere quibusdam nulla? Nostrum recusandae nemo, beatae omnis ex porro provident facilis, eaque eum illum dolore
-                </p>
             </p>
+        </div>
+        </div>
         </div>
         <div class="call">
             <div class="profilepic">       <img src="w-pic.png" alt="w-pic" class="w-pic" width="35" height="35">     </div>
