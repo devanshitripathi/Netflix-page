@@ -83,10 +83,14 @@
     color: crimson;
 }
 
-
+ul.uptabs{
+    margin-block: 0;
+    padding: 0;
+}
 .uptabs{
     background-color:  rgb(231, 234, 236);
     list-style: none;
+    margin: 0;
 }
 
 .uptabs li.t{
@@ -94,7 +98,7 @@
     font-size: 1.4rem;
     margin-bottom: 2rem;
     color: rgb(83, 80, 80);
-    margin-left: -20%;
+    margin-left: 0;
 
 }
 .svg{
@@ -198,15 +202,16 @@ img.wa{
     font-size: 0.75rem;
     color: grey;
     height: 15px;
-    margin-top: -15px;
     align-self: center;
     /* margin-left: 40px; */
+    margin-block: 0;
 }
 
 .clientn{
-    margin-top: 20px;
     grid-column: 2/3;
     grid-row: 1;
+    margin-top: 1.5rem;
+    margin-block: 0;
     align-self: center;
     /* margin-left: 40px; */
 }
@@ -293,14 +298,7 @@ img.wa{
     height: 10px;
 }
 
-.tv2{
-    display: flex;
-    /* place-content: center; */
-    width: 50%;
-    margin-left: 60%;
-    margin-top: -50px;
-    height: 160px;
-}
+
 .tvicon2{
     position: relative;
     align-self: flex-end;
@@ -536,7 +534,6 @@ ul.tickets .marker-t{
 
 .insights .ins li{
     padding: 10px;
-    margin-left: -40px;
     font-size: 1.1rem;
 }
 
@@ -589,13 +586,14 @@ ul.tickets .marker-t{
 }
 
 .past-issues  p.msg{
-    padding: 0px 40px 10px 20px;
+    padding: 20px 40px 10px 20px;
+    margin-block: 0;
 }
 
 .past-issues p.date{
     color: grey;
     margin-left: 20px;
-    margin-top: -10px;
+    margin-block: 0;
     font-size: 0.9rem;
 }
 
